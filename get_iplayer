@@ -9458,7 +9458,7 @@ sub tag_prog {
 			$meta->{$key} = $val;
 		}
 	}
-	my $fmt_show = $opt->{tag_formatshow} || "<name>";
+	my $fmt_show = $opt->{tag_formatshow} || "<nameshort>";
 	my $fmt_title = $opt->{tag_formattitle} || "<episodeshort>";
 	$meta->{show} = $prog->substitute($fmt_show, 99);
 	$meta->{title} = $prog->substitute($fmt_title, 99);
